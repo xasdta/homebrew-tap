@@ -5,21 +5,21 @@
 class Pilothouse < Formula
   desc "One inbox for every coding agent — rules before every tool call, approvals from your phone"
   homepage "https://pilothouse.dev"
-  version "0.2.8"
+  version "0.2.9"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/xasdta/pilothouse/releases/download/v0.2.8/pilothouse_0.2.8_darwin_amd64.tar.gz"
-      sha256 "6ab4ef839b9ee389eb000a5c173abe49bc030c7319a7df62f1bc3efd16eb87d3"
+      url "https://github.com/xasdta/pilothouse/releases/download/v0.2.9/pilothouse_0.2.9_darwin_amd64.tar.gz"
+      sha256 "2d5d40b230140306cb0a2197ac3a366aaf083be5a283b46c50291cfd7e7cf99f"
 
       define_method(:install) do
         bin.install "pilothouse"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/xasdta/pilothouse/releases/download/v0.2.8/pilothouse_0.2.8_darwin_arm64.tar.gz"
-      sha256 "0bc113cb45625c0da8e093867f61ec15ced1eb50b9f6966f6c8aa2ce38fa9a9d"
+      url "https://github.com/xasdta/pilothouse/releases/download/v0.2.9/pilothouse_0.2.9_darwin_arm64.tar.gz"
+      sha256 "ad208a1dc007a12d145f52891542f7bf78f44b64a816069f805b2bd74c45beec"
 
       define_method(:install) do
         bin.install "pilothouse"
@@ -29,15 +29,15 @@ class Pilothouse < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xasdta/pilothouse/releases/download/v0.2.8/pilothouse_0.2.8_linux_amd64.tar.gz"
-      sha256 "9ac526bf796e72cda2461635ddc330e589379996068d7450286990778cb0581b"
+      url "https://github.com/xasdta/pilothouse/releases/download/v0.2.9/pilothouse_0.2.9_linux_amd64.tar.gz"
+      sha256 "2c1ffe04fa9029bcbfdd9d6e30a4cee1c5ff4637407f4a415a96e60df36a28b2"
       define_method(:install) do
         bin.install "pilothouse"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xasdta/pilothouse/releases/download/v0.2.8/pilothouse_0.2.8_linux_arm64.tar.gz"
-      sha256 "700c5838cf484fda625b6f8ad81653d8f9ed767c26e6115870240107c800524c"
+      url "https://github.com/xasdta/pilothouse/releases/download/v0.2.9/pilothouse_0.2.9_linux_arm64.tar.gz"
+      sha256 "9e2512632b9df8b70818d322b87a94e904cb2fc3bded207f7a2228a719fe087c"
       define_method(:install) do
         bin.install "pilothouse"
       end
